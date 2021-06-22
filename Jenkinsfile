@@ -7,7 +7,7 @@ pipeline {
 			stage ( 'Cloneing github' ){
 				steps {
 					sh 'rm -rf dockertest1'
-					sh 'git clone https://github.com/ferozbhai/dockertest1.git'
+					sh 'git clone --branch newjenkins https://github.com/ferozbhai/dockertest1.git'
 				}
 			}
 			stage ( 'Build Docker Image' ){
